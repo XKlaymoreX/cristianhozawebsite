@@ -14,7 +14,7 @@ const LandingSection = () => {
                 <p>hi there👋</p>
                 <p>i'm cristian hoza</p>
                 <p>full stack developer &#38; web designer</p>
-                <p>Young age, professionalism, flexibility<br/>
+                <p>Young age, professionality, flexibility<br/>
                     &#38; vast range of growing Tech Skills.<br/>
                     All in One.<br/><br/>
 
