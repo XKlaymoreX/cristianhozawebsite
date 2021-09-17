@@ -65,6 +65,10 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+
+.firebase
+.firebaserc
+firebase.json
 # Yarn Integrity file
 .yarn-integrity
 
