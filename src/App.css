@@ -1,0 +1,143 @@
+*{
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  margin: auto;
+  padding: 0;
+  height: 300vh;
+
+}
+
+
+.landingSection{
+  width: 100vw;
+  height: 100vh;
+  min-height: 800px;
+  max-width: 1820px; 
+  position: relative;
+}
+
+
+.landingSectionBg{
+  background-color: #5142AE;
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+}
+
+.landingSectionImageBox{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  right: 0;
+  max-width: 1820px;
+}
+
+.landingSectionImage{
+  background:url('./Shared/Media/websiteimage.png');
+  background-size:cover ;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: normal;
+  background-position-y:100px ;
+  transform: scale(1.6) ;
+}
+
+.landingSectionImage > .blurred{
+  width: 100%;
+  height: 100%;
+  background-color: #5142AE;
+  mix-blend-mode: screen;
+  opacity: 68%;
+}
+
+.landingSectionText{
+  position: absolute;
+  color: white;
+  top: 25%;
+  right: 45%;
+  width: auto;
+  height: auto;
+  text-align: right;
+  font-family: 'Poppins';
+}
+
+.landingSectionText > p:nth-child(1){
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 0px;
+}
+.landingSectionText > p:nth-child(2){
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 64px;
+  font-style: italic;
+  line-height: 0px;
+}
+.landingSectionText > p:nth-child(3){
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 36px;
+  font-style: italic;
+  color:#FFD770 ;
+  line-height: normal;
+  line-height: 0px;
+}
+.landingSectionText > p:nth-child(4){
+  font-weight: 600;
+  font-size: 20px;
+  line-height: normal;
+}
+
+@keyframes chevron-animation{
+  0%{
+    transform: translateY(0);
+  }
+  
+  100%{
+    transform: translateY(20px) scale(1.2);
+  }
+}
+
+@keyframes text-animation{
+  0%{
+  }
+  
+  100%{
+    transform: scale(1.2);
+  }
+}
+/*
+.chevron{
+  animation-name: chevron-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 10px;
+}
+*/
+.landingSectionInviteToAction{
+  position: absolute;
+  color: white;
+  left: calc(50% - 86px);
+  bottom: 8%;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+
+.landingSectionInviteToAction > div{
+  animation-name: text-animation;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 10px;
+}
