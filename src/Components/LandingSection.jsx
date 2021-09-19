@@ -12,8 +12,8 @@ const LandingSection = () => {
             </div>
             <div className="landingSectionText">
                 <p>hi there👋</p>
-                <p>i'm cristian hoza</p>
-                <p>full stack developer &#38; web designer</p>
+                <h1>i'm cristian hoza</h1>
+                <h1>full stack developer &#38; web designer</h1>
                 <p>Young age, professionality, flexibility<br/>
                     &#38; vast range of growing Tech Skills.<br/>
                     All in One.<br/><br/>

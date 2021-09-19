@@ -68,29 +68,29 @@
   font-family: 'Poppins';
 }
 
-.landingSectionText > p:nth-child(1){
+.landingSectionText > :nth-child(1){
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px;
   line-height: 0px;
 }
-.landingSectionText > p:nth-child(2){
+.landingSectionText > h1{
   text-transform: capitalize;
   font-weight: 600;
   font-size: 64px;
   font-style: italic;
-  line-height: 0px;
+  line-height: 25px;
 }
-.landingSectionText > p:nth-child(3){
+.landingSectionText > :nth-child(3){
   text-transform: uppercase;
   font-weight: 800;
   font-size: 36px;
   font-style: italic;
   color:#FFD770 ;
   line-height: normal;
-  line-height: 0px;
+  line-height: 15px;
 }
-.landingSectionText > p:nth-child(4){
+.landingSectionText > :nth-child(4){
   font-weight: 600;
   font-size: 20px;
   line-height: normal;
