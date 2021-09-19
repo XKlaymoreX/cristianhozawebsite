@@ -1,14 +1,17 @@
 import React from 'react'
 import Chevron from '../Shared/Icons/Chevron'
+import  Image from '../Shared/Media/websiteimage.png'
 
 const LandingSection = () => {
     return (
         <div className="landingSection">
             <div className="landingSectionBg"></div>
             <div className="landingSectionImageBox">
-                <div className="landingSectionImage">
+               {/* <div className="landingSectionImage">
                     <div className="blurred"></div>
-                </div>
+                </div>*/} 
+                <div className="blurred"></div>
+                <img src={Image} alt="Cristian Hoza Image, Developer, Designer, Full Stack, Switzerland" width="100%" height="100%" style={{objectFit:'cover',objectPosition:'center',mixBlendMode:'normal',transform:'scale(1.5)',marginTop:'100px'}} />
             </div>
             <div className="landingSectionText">
                 <p>hi there👋</p>
