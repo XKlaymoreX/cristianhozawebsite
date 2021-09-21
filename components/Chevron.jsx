@@ -1,6 +1,7 @@
 import React from "react";
 
-function Icon() {
+const Icon = (props) =>  {
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,7 +9,7 @@ function Icon() {
       height="26"
       fill="none"
       viewBox="0 0 83 26"
-      className="chevron"
+      className={props.class}
     >
       <path
         fill="#fff"
