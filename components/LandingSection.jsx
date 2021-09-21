@@ -4,6 +4,7 @@ import style from '../styles/landingSection.module.css'
 
 
 
+
 const LandingSection = ({res}) => {
     console.log(res)
     return (
@@ -22,7 +23,7 @@ const LandingSection = ({res}) => {
                 <div className={
                     style.blurred
                 }></div>
-                <img src={'./websiteimage.png'} alt="MyImage"
+                <img src={'./websiteimage.jpg'} alt="MyImage"
                     className={
                         style.landingSectionImage
                     }/>
