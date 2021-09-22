@@ -5,8 +5,6 @@ import {gsap} from 'gsap'
 
 
 const LandingSection = () => {
-
-    
     useEffect(() => {
 
        var fadeIn =  gsap.fromTo(`.${style.landingSection}`, {
@@ -41,7 +39,7 @@ const LandingSection = () => {
                  <img 
                     src={'./websiteimage.jpg'}
                     alt="MyImage"
-                    loading="eager"
+                    loading="lazy"
                     className={
                         style.landingSectionImage
                     }
