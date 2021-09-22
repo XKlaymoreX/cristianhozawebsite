@@ -1,14 +1,30 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Chevron from './Chevron'
 import style from '../styles/landingSection.module.css'
+import {gsap} from 'gsap'
+
+
+const LandingSection = () => {
+
+    
+    useEffect(() => {
+
+       var fadeIn =  gsap.fromTo(`.${style.landingSection}`, {
+            opacity:0
+        }, {
+            opacity:1,
+            duration:1
+        })
+
+        return () => {
+            fadeIn.kill()
+        }
 
 
 
+    } , [])
 
-const LandingSection = ({res}) => {
-    console.log(res)
-    return (
-        <div className={
+        return (<div className={
             style.landingSection
         }>
             <div className={
@@ -16,17 +32,21 @@ const LandingSection = ({res}) => {
             }></div>
             <div className={
                 style.landingSectionImageBox
-            }>
-                {/* <div className="landingSectionImage">
-                    <div className="blurred"></div>
-                </div>*/}
+            }> {/* <div className="landingSectionImage">
+                        <div className="blurred"></div>
+                    </div>*/}
                 <div className={
                     style.blurred
                 }></div>
-                <img src={'./websiteimage.jpg'} alt="MyImage"
+                 <img 
+                    src={'./websiteimage.jpg'}
+                    alt="MyImage"
+                    loading="eager"
                     className={
                         style.landingSectionImage
-                    }/>
+                    }
+                    /> 
+    
             </div>
             <div className={
                 style.landingSectionText
@@ -37,21 +57,28 @@ const LandingSection = ({res}) => {
                 <p>Young age, professionality, flexibility<br/>
                     &#38; vast range of growing Tech Skills.<br/>
                     All in One.<br/><br/>
-
+    
                     Based in Switzerland🇨🇭
-
+    
                 </p>
             </div>
-            <div className={style.landingSectionInviteToAction}>
-                <Chevron class={style.chevron}/>
+            <div className={
+                style.landingSectionInviteToAction
+            }>
+                <Chevron class={
+                    style.chevron
+                }/>
                 <div style={
                     {marginTop: '20px'}
                 }>
                     don&apos;t scroll down!
                 </div>
             </div>
-        </div>
-    )
-}
+        </div>)
+    
+    
+    
+    }
+
 
 export default LandingSection
