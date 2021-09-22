@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import Chevron from './Chevron'
 import style from '../styles/landingSection.module.css'
 import {gsap} from 'gsap'
+import Image from 'next/image'
 
 
 const LandingSection = () => {
@@ -38,12 +39,13 @@ const LandingSection = () => {
                 }></div>
                  <img 
                     src={'./websiteimage.jpg'}
-                    alt="MyImage"
-                    loading="lazy"
+                    alt="Cristian Hoza, Developer, Designer, Profile Picture, Image"
+                    loading="eager"
                     className={
                         style.landingSectionImage
                     }
-                    /> 
+                    />  
+
     
             </div>
             <div className={
