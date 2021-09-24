@@ -1,14 +1,13 @@
-import React, {useEffect} from 'react'
+import React, {useEffect,useRef} from 'react'
 import Chevron from './Chevron'
 import style from '../styles/landingSection.module.css'
 import {gsap} from 'gsap'
 
-
-const myLoader = ({width, height}) => {
-    return "../public/websiteimage.jpg"
-}
 const LandingSection = () => {
+    var bgImageRef = useRef()
+
     useEffect(() => {
+        bgImageRef.current.onload = gsap.fromTo('.'+bgImageRef.current.className, { opacity:0} , {opacity:1,duration:3})
 
         var fadeIn = gsap.fromTo(`.${
             style.landingSection
@@ -26,6 +25,9 @@ const LandingSection = () => {
 
     }, [])
 
+
+
+
     return (
         <div className={
             style.landingSection
@@ -42,7 +44,7 @@ const LandingSection = () => {
                 <div className={
                     style.blurred
                 }></div>
-                <img src={'./websiteimage.jpg'}
+                <img ref={bgImageRef}  src={'./websiteimage.jpg'}
                     alt="Cristian Hoza, Developer, Designer, Profile Picture, Image"
                     loading="eager"
                     className={

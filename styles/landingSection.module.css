@@ -85,11 +85,12 @@
   .landingSectionText > :nth-child(3){
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 2.5vw;
+    font-size: max(40px);
     font-style: italic;
     color:#FFD770 ;
-    line-height: normal;
-    line-height: 15px;
+    line-height: 35px;
+
   }
   .landingSectionText > :nth-child(4){
     font-weight: 600;
@@ -147,4 +148,16 @@
     animation-iteration-count: infinite;
     animation-direction: alternate;
     margin-bottom: 10px;
+  }
+
+
+  @media all and (max-width:1400px){
+    .landingSectionText > h1{
+      font-size: 4vw;
+    }
+  }
+
+
+  @media all and (max-width:1000px){
+    
   }
