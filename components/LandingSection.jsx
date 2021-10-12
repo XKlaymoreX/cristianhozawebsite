@@ -30,7 +30,6 @@ const LandingSection = () => {
 
     return (
         <section className={style.landingSection}>
-            <div className={style.landingSectionBg}></div>  {/* LANDING SECTION BG*/}
             <div className={style.landingSectionImageBox}> {/* LANDING Section image box*/}
                 <div className={style.blurred}></div>  {/* LANDING Section blurred*/}
                 
@@ -42,6 +41,7 @@ const LandingSection = () => {
                 className={
                     style.landingSectionImage
                 }/> {/* LANDING Section image*/}  
+
                 <img                        
                 ref={bgImageRef}  
                 src={'websiteimage-small.jpg'}
