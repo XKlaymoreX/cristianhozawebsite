@@ -90,12 +90,3 @@ export default LandingSection
 
 
 
-export const getStaticProps = async () => {
-
-
-    return {
-        props : {
-
-        }
-    }
-}
