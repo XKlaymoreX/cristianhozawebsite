@@ -6,11 +6,17 @@
     height: 300vh;
   
   }
+
+  .landingSectionInviteToActionButton{
+    display: none;
+  }
   
-  
+  .landingSectionImageSmall{
+    display: none;
+  }
   .landingSection{
     width: 100vw;
-    height: 1000px;
+    height: 100vh;
     min-height: 800px;
     max-height: 1200px;
     max-width: 1820px; 
@@ -44,6 +50,9 @@
     mix-blend-mode: normal;
     transform: scale(1) ;
   }
+
+
+  
   
    .blurred{
     width: 100%;
@@ -60,8 +69,8 @@
   .landingSectionText{
     position: absolute;
     color: white;
-    top: 25%;
-    right: 45%;
+    top: 22%;
+    right: 42%;
     width: auto;
     height: auto;
     text-align: right;
@@ -125,6 +134,7 @@
     animation-direction: alternate;
     margin-bottom: 10px;
   }*/
+
   
   .landingSectionInviteToAction{
     position: absolute;
@@ -157,7 +167,266 @@
     }
   }
 
+/*FIRST LAYOUT*/
 
-  @media all and (max-width:1000px){
+/*
+  @media all and (max-width: 1000px){
     
+    .landingSection{
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      height: auto;
+    }
+
+    .landingSectionImageBox{
+      position: relative;
+      width: 100%;
+      height: 450px;
+    }
+
+    .landingSectionImage{
+      display: none;
+    }
+
+    .landingSectionImageSmall{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 450px;
+      top: 0;
+      object-fit: cover;
+
+    }
+
+    .blurred{
+      position: absolute;
+      width: 100%;
+      height: 600px;
+      top: 0;
+    }
+
+    .landingSectionText{
+      position: relative;
+      text-align: left;
+      height: 500px;
+      width: 90%;
+      margin: 5%;
+      left: 0;
+    }
+
+    .landingSectionText > h1{
+      font-weight: bold;
+      font-size: 36px;
+      font-style: normal;
+      line-height: 15px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .landingSectionText > :nth-child(3){
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 40px;
+      font-style: italic;
+      color:#FFD770 ;
+      line-height: 35px;
+      width: 100%;
+    }
+
+    .landingSectionText > :nth-child(4){
+      font-weight: 400;
+      font-size: 23px;
+      line-height: normal;
+      width: 100%;
+    }
+    .landingSectionInviteToAction{
+      display: none;
+    }
+
+    .landingSectionInviteToActionButton{
+      display: inline-block;
+      border: 4px solid #FFD770;
+      padding: 10px 15px;
+      color: #FFD770;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-top: 30px;
+    }
+
+  }*/
+
+  @media all and (max-width: 1000px) {
+
+    .landingSection{
+      top: 0;
+      display: flex;
+      flex-flow: row;
+      min-height: auto;
+      height: 650px;
+      overflow-x: hidden;
+    }
+    .landingSectionImageSmall{
+      display: block;
+      width: 100%;
+    }
+    .landingSectionImage{
+      display: none;
+    }
+  
+
+    .landingSectionImageBox{
+      width:600px;
+      height: 600px;
+      position: absolute;
+      bottom: 100px;
+      right: -50px;
+    }
+
+    .landingSectionText{
+      text-align: left;
+      left: 40px;
+      height: 500px;
+      top: 100px;
+      width: 500px;
+    }
+
+
+
+    .landingSectionText > :nth-child(4){
+      font-weight: 500;
+      font-size: 17px;
+      line-height: normal;
+      width: 100%;
+    }
+
+    .landingSectionText > h1{
+      font-weight: bold;
+      font-size: 28px;
+      font-style: normal;
+      line-height: 10px;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+  }
+
+  @media all and (max-width:786px){
+    .landingSectionImageSmall{
+      display: block;
+      width: 100%;
+    }
+    .landingSectionImageBox{
+      width:400px;
+      height: 400px;
+      position: absolute;
+      bottom: 100px;
+      right: -50px;
+    }
+  }
+
+  @media all and (max-width: 550px){
+    
+    .landingSection{
+      display: flex;
+      flex-flow: column;
+      position: relative;
+      height: auto;
+    }
+
+
+    .landingSectionImageBox{
+      position: relative;
+      width: 100%;    
+      height: 450px;
+      right: 0;
+    }
+ 
+    .landingSectionImageSmall{
+      height:450px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .landingSectionInviteToAction{
+      display: none;
+    }
+
+    .landingSectionInviteToActionButton{
+      display: block;
+      position: absolute;
+      top: 350px;
+      border: 4px solid #FFD770;
+      padding: 10px 15px;
+      color: #FFD770;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+
+    .landingSectionText{
+      width: calc(100% - 40px);
+      margin: 0 20px;
+      position: relative;
+    }
+
+
+    .landingSectionText > :nth-child(1){
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: normal;
+
+      position: absolute;
+      top: 10px;
+      width: 100%;
+    }
+    .landingSectionText > h1{
+      font-weight: bold;
+      font-size: 24px;
+      font-style: normal;
+      line-height: 10px;
+      margin-bottom: 30px;
+      position: absolute;
+      top: 45px;
+      width: 100%;
+    }
+    .landingSectionText > :nth-child(3){
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 25px;
+      font-style: italic;
+      color:#FFD770 ;
+      line-height: 25px;
+      position: absolute;
+      top: 90px;
+      width: 100%;
+    }
+    .landingSectionText > :nth-child(4){
+      font-weight: 500;
+      font-size: 17px;
+      line-height: normal;
+      position: absolute;
+      top: 160px;
+      width: 100%;
+    }
+
+  }
+
+
+  @media screen and (max-width: 350px){
+
+    .landingSectionText > :nth-child(1){
+      font-size: 6vw;
+    }
+    .landingSectionText > h1{
+      font-size: 6.5vw;
+    }
+    .landingSectionText > :nth-child(3){
+      font-size: 6.5vw;
+    }
+    .landingSectionText > :nth-child(4){
+      font-size: 4vw;
+    }
+
   }
