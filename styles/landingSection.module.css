@@ -84,8 +84,7 @@
     text-transform: capitalize;
     font-weight: 600;
     font-size: 64px;
-    font-style: italic;
-    line-height: 25px;
+    line-height: 10px;
   }
   .landingSectionText > :nth-child(3){
     text-transform: uppercase;
@@ -146,6 +145,9 @@
     animation-direction: alternate;
     margin-bottom: 10px;
   }
+
+
+
 
 
   @media all and (max-width:1400px){
@@ -220,6 +222,11 @@
 
   @media all and (max-width: 550px){
     
+
+    .landingSectionImage{
+      display: none;
+    }
+
     .landingSection{
       display: flex;
       flex-flow: column;
@@ -230,9 +237,12 @@
     .landingSectionImageBox{
       position: relative;
       width: 100%;    
-      height: 350px;
-      right: 0;
+      height: auto; 
       top: 0;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      justify-self: end;
     }
  
 
@@ -246,10 +256,12 @@
     }
 
     .landingSectionImageSmall{
-      height:450px;
+      height:350px;
       display: block;
       object-fit: cover;
+      object-position: center;
     }
+
 
     .landingSectionInviteToAction{
       display: none;

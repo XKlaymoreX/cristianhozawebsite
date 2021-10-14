@@ -3,6 +3,7 @@ import React from 'react'
 import styles from '../styles/Home.module.css'
 import LandingSection from '../components/LandingSection'
 import AboutSection from '../components/AboutSection'
+import Layout from '../components/Layout'
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
             styles.container
         }>
             <Head>
-                <title>Hello, I&apos;m Cristian Hoza</title>
+                <title>Hello, I&apos;m Cristian Hoza!</title>
                 <meta name="description" content="Hello, I'm Cristian Hoza.
                                     Very passionate about the IT sector since I was a kid. I mainly manifest my passion in the development sphere. Through 4+ years of experience, I've mostly invested my time in giving a professional contribution to both small IT realities and multinational companies with an international presence. For a year now I've started to deepen UI/UX and Web Design.
                                     I consider my young age as a strength and an opportunity for growth for a company, which I express in my job through flexibility and continuous learning.
@@ -22,10 +23,10 @@ export default function Home() {
                 <meta name="robots" content="all"></meta>
                 <meta name="google" content="notranslate" key="notranslate"/>
             </Head>
-            <main>
-                <LandingSection/>
+            <Layout>
+            <LandingSection/>
                 <AboutSection/>
-            </main>
+            </Layout>
         </div>
     )
 }

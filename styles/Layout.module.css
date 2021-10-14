@@ -1,0 +1,81 @@
+.footer{
+    max-width: 1800px;
+    background-color: #5142AE;
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.myNavbar{
+    height: auto;
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    z-index: +999;
+    font-family: "Poppins";
+}
+
+.navThumbnail{
+    width: 35px;
+    border-radius: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.myNavbar ul{
+    height: 80px;
+    width: 100%;
+    padding: 0;
+    margin: 0 20px;
+    list-style: none;
+    color: #5142AE;
+    display: flex;
+    align-items: center;
+}
+
+.myNavbar li{
+    margin-right: 30px;
+    font-weight: 500;
+}
+
+.navbarToggle{
+    display: none;
+}
+
+
+.myNavbar li:nth-child(1){
+    background-color: #5142AE;
+    color: white;
+    border-radius: 6px;
+    width: 160px;
+    padding:5px 0;
+}
+
+.myNavbar li:nth-child(1) a{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media all and (max-width:550px){
+
+    .myNavbar ul{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navItem{
+        display: none;
+    }
+
+    .navbarToggle{
+        display: block;
+    }
+}
