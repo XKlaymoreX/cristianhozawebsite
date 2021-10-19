@@ -20,7 +20,7 @@ const Navbar = () => {
         <nav className={
             style.myNavbar
         }>
-            <ul>
+            <ul className={style.navItems}>
                 <li >
                     <Link href="https://www.linkedin.com/in/cristian-george-hoza-b8164b171">
                         <a>

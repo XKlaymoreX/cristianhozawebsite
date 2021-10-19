@@ -59,9 +59,7 @@ const LandingSection = () => {
                 <p>Young age, professionality, flexibility<br/>
                     &#38; vast range of growing Tech Skills.<br/>
                     All in One.<br/>
-
                     Based in Switzerland🇨🇭
-
                 </p>
 
                 <div className={style.landingSectionInviteToActionButton}>
