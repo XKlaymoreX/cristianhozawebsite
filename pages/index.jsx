@@ -25,7 +25,7 @@ export default function Home() {
             </Head>
             <Layout>
             <LandingSection/>
-                <AboutSection/>
+            {/*<AboutSection/> Add this when ok!*/} 
             </Layout>
         </div>
     )
